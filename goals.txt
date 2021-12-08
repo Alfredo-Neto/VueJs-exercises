@@ -1,10 +1,4 @@
 OBJETIVOS PARA OS PRIMEIROS DIAS:
-    - Continuar assistindo o curso
-    - Me certificar de que eu entendo o maximo de cada assunto
-    - fazer os exercicios do curso p/ fixacao ou aplicar conceitos em um projeto
     - Listar no README do projeto quais conceitos em VueJs foram exercitados
     - Trabalhar em um Worklog
-    - Fazer anotacoes sobre os assuntos aprendidos(desde o inicio)
-    - Repetir explicacao de conceitos em voz alta ou ensinando para alguem
-    - Mostrar os resultados para o Ronaldo
-    - subir os exercicios no Github
+    - subir os exercicios no Github OK
