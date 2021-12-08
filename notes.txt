@@ -1,0 +1,44 @@
+Computed properties
+    - computed properties sao uteis quando se quer expressar operacoes
+    mais complexas no template. Nesse sentido, elas sao semelhantes aos methods, 
+    exceto pelo fato de que elas fazem cache de acordo com as suas dependencias
+    reativas. Um dado computado so sera reavaliado quando alguma de suas dependencias
+    tiver o seu valor alterado. Assim, diferente de methods, as computed properties nao
+    serao reavaliadas a cada vez que uma renderizacao for necessaria.
+
+        exemplo de computed property:
+
+        <div id="example">
+            <p>Mensagem original: "{{ message }}"</p>
+            <p>Mensagem ao contrário: "{{ reversedMessage }}"</p>
+        </div>
+
+         var vm = new Vue({
+            el: '#example',
+            data: {
+                message: 'Olá Vue'
+            },
+            computed: {
+                // uma função "getter" computada (computed getter)
+                reversedMessage: function () {
+                // `this` aponta para a instância Vue da variável `vm`
+                return this.message.split('').reverse().join('')
+                }
+            }
+        })
+
+    Isso significa que enquanto message não 
+    sofrer alterações, múltiplos acessos ao reversedMessage 
+    retornarão o último valor calculado sem precisar executar 
+    a função novamente.
+
+    Em comparação, a invocação de um método sempre irá rodar a função, 
+    toda vez que uma nova renderização ocorrer.
+  }
+
+  watch:
+    -O watch tambem e semelhante ao computed property, mas ele pode ser mais personalizado,
+    e eh usado em apenas uma dependencia por vez(utilizando o mesmo nome da dependencia, inclusive)
+    . Se aquela dependencia for alterada, o watch vai disparar a funcao correspondente.
+    Alem disso, ao contrario do computed, o watch eh assincrono. Dito isso, ele sempre pode ser usado
+    para performar operacoes assincronas ou caras em resposta a uma alteracao nos dados.
