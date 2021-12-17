@@ -1,4 +1,6 @@
 OBJETIVOS PARA OS PRIMEIROS DIAS:
-    - Listar no README do projeto quais conceitos em VueJs foram exercitados
+    - Listar no README do projeto quais conceitos em VueJs foram exercitados OK
     - Trabalhar em um Worklog
     - subir os exercicios no Github OK
+
+ULTIMA AULA: 37
