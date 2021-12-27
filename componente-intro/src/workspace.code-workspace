@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "vuejs-exercises",
+			"path": "../.."
+		},
+		{
+			"name": "comunicacao",
+			"path": "../../../Downloads/componentes-comunicacao (1)/componentes-comunicacao/comunicacao"
+		},
+		{
+			"path": "../../../Downloads/componentes-comunicacao (1)/componentes-comunicacao/comunicacao-desafio"
+		}
+	],
+	"settings": {}
+}
