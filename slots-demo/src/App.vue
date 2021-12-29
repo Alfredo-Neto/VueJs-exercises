@@ -8,10 +8,11 @@
     <br>
    <AppButton>
      Editar
+     (icon)
    </AppButton>
     <br>
     <br>
-   <SlotExample variant="success">
+   <SlotExample variant="danger">
      Deletar
    </SlotExample>
   </div>

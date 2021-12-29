@@ -27,7 +27,7 @@ export default {
     baseClass() {
         return [
             'btn',
-            this.getVariant,
+            this.getVariant
         ]
     },
 
