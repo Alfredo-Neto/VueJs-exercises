@@ -1,6 +1,6 @@
 <template>
-  <button class="btn btn-primary">
-    <slot>{{ title }}</slot>
+  <button :class="baseClass">
+    <slot />
   </button>    
 </template>
 
@@ -13,8 +13,26 @@ export default {
    */
   props: {
     title: {
-      type: String, 
-      default: 'Button', 
+        type: String, 
+        default: 'Button', 
+    },
+
+    variant: {
+        type: String,
+        default: 'primary'
+    },
+  },
+
+  computed: {
+    baseClass() {
+        return [
+            'btn',
+            this.getVariant,
+        ]
+    },
+
+    getVariant() {
+        return this.variant ? `btn-${this.variant}` : ''
     },
   },
 }
